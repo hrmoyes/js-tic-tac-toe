@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hayden's Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles\styles.css">
+    <script src="js\app.js"></script>
 </head>
 <body>
     <h1>Interactive JS Tic Tac Toe</h1>
     <div id="game-board">
         <div id="top-row">
-            <input type="Submit" id="1">
-            <input type="Submit" id="2">
-            <input type="Submit" id="3">
+            <input type="Submit" id="1" value="" onclick="clickBlock(1); winChecker()">
+            <input type="Submit" id="2" value="" onclick="clickBlock(2); winChecker()">
+            <input type="Submit" id="3" value="" onclick="clickBlock(3); winChecker()">
         </div>
         <div id="mid-row">
-            <input type="Submit" id="4">
-            <input type="Submit" id="5">
-            <input type="Submit" id="6">
+            <input type="Submit" id="4" value="" onclick="clickBlock(4); winChecker()">
+            <input type="Submit" id="5" value="" onclick="clickBlock(5); winChecker()">
+            <input type="Submit" id="6" value="" onclick="clickBlock(6); winChecker()">
         </div>
         <div id="bot-row">
-            <input type="Submit" id="7">
-            <input type="Submit" id="8">
-            <input type="Submit" id="9">
+            <input type="Submit" id="7" value="" onclick="clickBlock(7); winChecker()">
+            <input type="Submit" id="8" value="" onclick="clickBlock(8); winChecker()">
+            <input type="Submit" id="9" value="" onclick="clickBlock(9); winChecker()">
         </div>
-
-
-
-
+    </div>
+    <div id="select-move">
+        <h2>Select your move:</h2>
+        <input type="Submit" id="X-sel" value="X" onclick="playerChooseX()">
+        <input type="Submit" id="O-sel" value="O" onclick="playerChooseO()">
+    </div>
+    <div id="reset-button">
+        <input type="Submit" id="resetMe" value="Reset Game" onclick="resetButton()">
     </div>
 </body>
 </html>
